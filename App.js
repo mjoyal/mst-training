@@ -42,16 +42,24 @@ const App = () => {
   return (
     <StoreProvider>
       <View style={{flex: 1}}>
-        <NavigationContainer>
-          <Stack.Navigator initialRouteName="Home">
-            <Stack.Screen name="Home" component={HomeScreen} />
-            <Stack.Screen name="Cart" component={CartScreen} />
-          </Stack.Navigator>
-        </NavigationContainer>
+        <Text>Hello Queue Bitches</Text>
       </View>
     </StoreProvider>
   );
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 const styles = StyleSheet.create({
   scrollView: {
