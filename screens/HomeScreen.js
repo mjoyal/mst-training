@@ -7,6 +7,7 @@ import MusicList from '../components/MusicList';
 const HomeScreen = ({navigation}) => {
   return (
     <View style={styles.screen}>
+    <MusicList/>
     
       <Button
         title="go to login"
