@@ -2,14 +2,12 @@ import React from "react";
 import { View, Text, StyleSheet, Button} from "react-native";
 
 import DefaultText from '../components/DefaultText'; 
+import MusicList from '../components/MusicList'; 
 
 const HomeScreen = ({navigation}) => {
   return (
     <View style={styles.screen}>
-      <Text>
-        Home Screen!
-      </Text>
-      <DefaultText>Testing!</DefaultText>
+    
       <Button
         title="go to login"
         onPress={() => {navigation.navigate('Login')}}

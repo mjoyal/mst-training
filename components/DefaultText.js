@@ -3,10 +3,8 @@ import { Text, StyleSheet } from "react-native";
 
 
 const DefaultText = ({type, ...props}) => {
-  // make it so we don't need to put in
-  console.log(type)
   return (
-      <Text style={styles[type]}>{props.children}</Text>
+      <Text style={styles[type] || styles.default}>{props.children}</Text>
   )
 }; 
 
