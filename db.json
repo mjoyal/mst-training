@@ -1,0 +1,197 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "mackenzie joyal",
+      "favourites": [
+        1,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "2",
+      "name": "kayleigh udy",
+      "favourites": [
+        4,
+        5,
+        7
+      ]
+    },
+    {
+      "id": "3",
+      "name": "rae hansen",
+      "favourites": []
+    },
+    {
+      "id": "4",
+      "name": "mia langford",
+      "favourites": [
+        3,
+        10,
+        9
+      ]
+    },
+    {
+      "id": "5",
+      "name": "kara pearson",
+      "favourites": [
+        9,
+        8,
+        7
+      ]
+    },
+    {
+      "id": "6",
+      "name": "catherine bax",
+      "favourites": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        8
+      ]
+    },
+    {
+      "id": "7",
+      "name": "edward white",
+      "favourites": []
+    },
+    {
+      "id": "8",
+      "name": "josie greenhill",
+      "favourites": []
+    }
+  ],
+  "tracks": [
+    {
+      "id": "1",
+      "name": "Iron Mike",
+      "albumImage": "",
+      "artist": "Leikeli47"
+    },
+    {
+      "id": "2",
+      "name": "Girl Blunt",
+      "albumImage": "",
+      "artist": "Leikeli47"
+    },
+    {
+      "id": "3",
+      "name": "Issa Bounce",
+      "albumImage": "",
+      "artist": "UpsideDown"
+    },
+    {
+      "id": "4",
+      "name": "Missing You",
+      "albumImage": "",
+      "artist": "Boston Bun"
+    },
+    {
+      "id": "5",
+      "name": "Daisy",
+      "albumImage": "",
+      "artist": "Ashnikko"
+    },
+    {
+      "id": "6",
+      "name": "Saggy Denim",
+      "albumImage": "",
+      "artist": "Princess Nokia"
+    },
+    {
+      "id": "7",
+      "name": "OHFR",
+      "albumImage": "",
+      "artist": "Rico Nasty"
+    },
+    {
+      "id": "8",
+      "name": "Tap In",
+      "albumImage": "",
+      "artist": "Saweetie"
+    },
+    {
+      "id": "9",
+      "name": "CHIEF O'KIEF",
+      "albumImage": "",
+      "artist": "Sophiya"
+    },
+    {
+      "id": "10",
+      "name": "I Like Him",
+      "albumImage": "",
+      "artist": "Princess Nokia"
+    }
+  ],
+  "queues": [
+    {
+      "id": "1",
+      "name": "scatter",
+      "creatorId": 3,
+      "tracks": [
+        1,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "2",
+      "name": "silly",
+      "creatorId": 7,
+      "tracks": [
+        6,
+        7,
+        10
+      ]
+    },
+    {
+      "id": "3",
+      "name": "party",
+      "creatorId": 9,
+      "tracks": [
+        3,
+        2,
+        1,
+        5
+      ]
+    },
+    {
+      "id": "4",
+      "name": "lets gooooo",
+      "creatorId": 10,
+      "tracks": [
+        9,
+        10,
+        8
+      ]
+    },
+    {
+      "id": "5",
+      "name": "rally",
+      "creatorId": 2,
+      "tracks": [
+        1,
+        5,
+        8
+      ]
+    },
+    {
+      "id": "6",
+      "name": "send it",
+      "creatorId": 1,
+      "tracks": [
+        1,
+        2,
+        4,
+        8,
+        9,
+        10,
+        3
+      ]
+    }
+  ]
+}

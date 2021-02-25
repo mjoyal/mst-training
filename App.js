@@ -9,7 +9,8 @@
 import 'react-native-gesture-handler';
 import StoreProvider from './stores/index';
 
-import React, {useState, useEffect} from 'react';
+import React from 'react';
+
 import {
   SafeAreaView,
   StyleSheet,
@@ -19,145 +20,15 @@ import {
   StatusBar,
 } from 'react-native';
 
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-
-// screens
-
-import HomeScreen from './components/HomeScreen';
-import CartScreen from './components/CartScreen';
-// react navigation
-
-import {NavigationContainer} from '@react-navigation/native';
-import {createStackNavigator} from '@react-navigation/stack';
-
-const Stack = createStackNavigator();
+import AppNavigator from "./navigation/AppNavigator";
 
 const App = () => {
   return (
     <StoreProvider>
-      <View style={{flex: 1}}>
-        <NavigationContainer>
-          <Stack.Navigator initialRouteName="Home">
-            <Stack.Screen name="Home" component={HomeScreen} />
-            <Stack.Screen name="Cart" component={CartScreen} />
-          </Stack.Navigator>
-        </NavigationContainer>
-      </View>
+      <AppNavigator />
     </StoreProvider>
   );
 };
 
-const styles = StyleSheet.create({
-  scrollView: {
-    backgroundColor: Colors.lighter,
-  },
-  engine: {
-    position: 'absolute',
-    right: 0,
-  },
-  body: {
-    backgroundColor: Colors.white,
-    color: '#141330',
-  },
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-    color: Colors.black,
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-    color: Colors.dark,
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-  footer: {
-    color: Colors.dark,
-    fontSize: 12,
-    fontWeight: '600',
-    padding: 4,
-    paddingRight: 12,
-    textAlign: 'right',
-  },
-});
 
 export default App;
-
-// <StoreProvider>
-// <StatusBar barStyle="dark-content" />
-// <SafeAreaView>
-//   <ScrollView
-//     contentInsetAdjustmentBehavior="automatic"
-//     style={styles.scrollView}>
-//     <Text>testing</Text>
-//     <View style={{flex: 1}}>
-//       <NavigationContainer>
-//         <Stack.Navigator initialRouteName="Home">
-//           <Stack.Screen name="Home" component={HomeScreen} />
-//           <Stack.Screen name="Cart" component={CartScreen} />
-//         </Stack.Navigator>
-//       </NavigationContainer>
-//     </View>
-//   </ScrollView>
-// </SafeAreaView>
-// </StoreProvider>
-
-// <View style={styles.sectionContainer}>
-//               <Text style={styles.sectionTitle}>Step One</Text>
-//               <Text style={styles.sectionDescription}>
-//                 Edit <Text style={styles.highlight}>App.js</Text> please let
-//                 this be edited
-//               </Text>
-//  </View>
-
-{
-  /* <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>See Your Changes</Text>
-              <Text style={styles.sectionDescription}>
-                <ReloadInstructions />
-              </Text>
-</View> */
-}
-
-{
-  /* <View style={styles.sectionContainer}>
-<Text style={styles.sectionTitle}>Debug</Text>
-<Text style={styles.sectionDescription}>
-  <DebugInstructions />
-</Text>
-</View> */
-}
-
-{
-  /* <View style={styles.sectionContainer}>
-<Text style={styles.sectionTitle}>Learn More</Text>
-<Text style={styles.sectionDescription}>
-  Read the docs to discover what to do next:
-</Text>
-</View> */
-}
-
-{
-  /* <LearnMoreLinks /> */
-}
-
-{
-  /* <Header />
-{global.HermesInternal == null ? null : (
-  <View style={styles.engine}>
-    <Text style={styles.footer}>Engine: Hermes</Text>
-  </View>
-)} */
-}
