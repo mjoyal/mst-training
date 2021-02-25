@@ -5,8 +5,9 @@ import {User} from './UserStore';
  
 const Queue = types.model({
   id: types.maybe(types.identifier),
+  name: types.maybe(types.string),
   creatorId: types.maybe(types.reference(User)),
-  tracks: types.maybe(types.array(Track))
+  tracks: types.maybe(types.array(Track)), 
 }); 
 
 const QueueStore = types.model({

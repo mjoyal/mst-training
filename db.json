@@ -106,31 +106,37 @@
   "queues": [
     {
       "id": 1, 
+      "name": "scatter", 
       "creatorId": 3,
       "tracks": [1, 4, 5]
     }, 
     {
-      "id": 1, 
+      "id": 2, 
+      "name": "silly", 
       "creatorId": 7,
       "tracks": [6, 7, 10]
     }, 
     {
-      "id": 1, 
+      "id": 3, 
+      "name": "party", 
       "creatorId": 9,
       "tracks": [3, 2, 1, 5]
     }, 
     {
-      "id": 1, 
+      "id": 4, 
+      "name": "lets gooooo", 
       "creatorId": 10,
       "tracks": [9, 10, 8]
     }, 
     {
-      "id": 1, 
+      "id": 5, 
+      "name": "rally", 
       "creatorId": 2,
       "tracks": [1, 5, 8]
     },
     {
-      "id": 1, 
+      "id": 6, 
+      "name": "send it", 
       "creatorId": 1,
       "tracks": [1, 2, 4, 8, 9, 10, 3]
     }

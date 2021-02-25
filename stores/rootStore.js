@@ -1,7 +1,7 @@
 import {types} from 'mobx-state-tree';
 import UserStore from './models/UserStore';
-import TrackStore from './models/ItemStore';
-import QueueStore from './models/CartStore';
+import TrackStore from './models/TrackStore';
+import QueueStore from './models/QueueStore';
 
 
 const RootStoreModel = types.model('RootStore').props({
