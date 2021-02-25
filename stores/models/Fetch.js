@@ -12,11 +12,15 @@ export default function createFetchData(collection) {
       }),
       getData: flow(function* getData() {
         self.isLoading = true;
-        const response = yield axios.get(
-          `https://5f6c842e34d1ef0016d58307.mockapi.io/api/v1/${collection}`,
-        );
-        self[collection] = response.data;
-        self.isLoading = false;
+        try {
+          const response = yield axios.get(
+            `http://localhost:3000/${collection}`,
+          );
+          self[collection] = response.data;
+          self.isLoading = false;
+        } catch (e) {
+          console.error('Uh oh', e)
+        }
       }),
     }));
 }
