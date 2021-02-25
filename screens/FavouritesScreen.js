@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, StyleSheet, Button} from "react-native";
 
-const FavouritesScreen = () => {
+const FavouritesScreen = ({navigation}) => {
   return (
     <View style={styles.screen}>
       <Text>

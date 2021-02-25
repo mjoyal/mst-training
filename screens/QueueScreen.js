@@ -1,12 +1,16 @@
 import React from "react";
 import { View, Text, StyleSheet, Button} from "react-native";
 
-const QueueScreen = () => {
+const QueueScreen = ({navigation}) => {
   return (
     <View style={styles.screen}>
       <Text>
         Queue Screen!
       </Text>
+      <Button
+        title="go home"
+        onPress={() => {navigation.navigate('Home')}}
+      />
     </View>
   )
 }; 

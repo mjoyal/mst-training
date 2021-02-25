@@ -9,7 +9,8 @@
 import 'react-native-gesture-handler';
 import StoreProvider from './stores/index';
 
-import React, {useState, useEffect} from 'react';
+import React from 'react';
+
 import {
   SafeAreaView,
   StyleSheet,
@@ -19,14 +20,12 @@ import {
   StatusBar,
 } from 'react-native';
 
-
+import AppNavigator from "./navigation/AppNavigator";
 
 const App = () => {
   return (
     <StoreProvider>
-      <View style={{flex: 1, justifyContent: 'center', alignItems: "center"}}>
-        <Text>Hello Queue Bitches</Text>
-      </View>
+      <AppNavigator />
     </StoreProvider>
   );
 };
