@@ -10,27 +10,51 @@ import QueueScreen from '../screens/QueueScreen';
 import FavouritesScreen from '../screens/FavouritesScreen'; 
 import SongLibraryScreen from '../screens/SongLibraryScreen'; 
 
-const Stack = createStackNavigator(); 
+const Home = createStackNavigator(); 
+const Favourites = createStackNavigator(); 
+const Library = createStackNavigator(); 
 const Tab = createBottomTabNavigator(); 
 
 const StackNavigator = () => {
   return (
-    <Stack.Navigator>
-      <Stack.Screen
+    <Home.Navigator>
+      <Home.Screen
         name='Home'
         component={HomeScreen}
       />
-      <Stack.Screen
+      <Home.Screen
         name='Login'
         component={LoginScreen}
       />
-      <Stack.Screen
+      <Home.Screen
         name='Queue'
         component={QueueScreen}
       />
-    </Stack.Navigator>
+    </Home.Navigator>
   )
 }; 
+
+const FavouritesNavigator = () => {
+  return (
+    <Favourites.Navigator>
+      <Favourites.Screen 
+        name="Favourites"
+        component={FavouritesScreen}
+      />
+    </Favourites.Navigator>
+  )
+}; 
+
+const LibraryNavigator = () => {
+  return (
+    <Library.Navigator>
+      <Library.Screen
+        name="Song Library"
+        component={SongLibraryScreen}
+      />
+    </Library.Navigator>
+  );
+};
 
 const MainNavigator = () => {
  return (
@@ -41,11 +65,11 @@ const MainNavigator = () => {
     />
     <Tab.Screen 
       name="Favourites"
-      component={FavouritesScreen}
+      component={FavouritesNavigator}
     />
     <Tab.Screen 
       name="Library"
-      component={SongLibraryScreen}
+      component={LibraryNavigator}
     />
   </Tab.Navigator>
  )

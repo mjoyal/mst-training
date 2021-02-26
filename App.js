@@ -25,7 +25,9 @@ import AppNavigator from "./navigation/AppNavigator";
 const App = () => {
   return (
     <StoreProvider>
+
       <AppNavigator />
+
     </StoreProvider>
   );
 };
