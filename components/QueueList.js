@@ -15,18 +15,26 @@ const QueueList = inject('queueStore')(
             <QueueCard
                 name={itemData.item.name}
                 owner={itemData.item.creatorId.name}
-                image={itemData.item.albumImage}
+                image="https://media.wonderlandmagazine.com/uploads/2020/07/0155_BEATSXASHNIKKO_BLUE_V3_C1.jpg"
             />
         ); 
       }
       return (
-        <View>
+        <View style={styles.container}>
           <FlatList data={queueStore.queues} renderItem={renderMusicCard} />
         </View>
       );
     }),
   );
 
+  const styles = StyleSheet.create({
+    container: {
+      flex: 1, 
+      justifyContent: 'center', 
+      alignItems: 'center'
+    }, 
+  }); 
+  
 
 export default QueueList; 
 

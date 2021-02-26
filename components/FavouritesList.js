@@ -20,13 +20,21 @@ const FavouritesList = inject('userStore')(
         ); 
       }
       return (
-        <View>
+        <View style={styles.container}>
           <FlatList data={userStore.loggedInUser.favourites} renderItem={renderMusicCard} />
         </View>
       );
     }),
   );
 
+  const styles = StyleSheet.create({
+    container: {
+      flex: 1, 
+      justifyContent: 'center', 
+      alignItems: 'center'
+    }, 
+  }); 
+  
 
 export default FavouritesList; 
 
