@@ -1,21 +1,17 @@
 import React from "react";
 import { View, Text, StyleSheet, Button} from "react-native";
 
-import DefaultText from '../components/DefaultText'; 
+import DefaultText from '../components/Defaults/DefaultText'; 
 import QueueList from '../components/QueueList'; 
 
 const HomeScreen = ({navigation}) => {
   return (
     <View style={styles.screen}>
-      <QueueList navigation={navigation}/>
       <Button
-        title="go to login"
+        title="login"
         onPress={() => {navigation.navigate('Login')}}
       />
-      <Button
-        title="go to queue"
-        onPress={() => {navigation.navigate('Queue')}}
-      />
+      <QueueList navigation={navigation}/>
     </View>
   )
 }; 

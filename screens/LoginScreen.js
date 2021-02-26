@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 import {observer, inject} from 'mobx-react';
 import { View, Text, StyleSheet, Button} from "react-native";
-import DefaultInput from '../components/DefaultInput'; 
+import DefaultInput from '../components/Defaults/DefaultInput'; 
 
 
 const LoginScreen = inject('userStore')(

@@ -1,4 +1,4 @@
-import {types} from 'mobx-state-tree';
+import {types, getRoot} from 'mobx-state-tree';
 
 import createFetchData from './Fetch';
 
@@ -11,7 +11,15 @@ export const Track = types.model({
 
 const TrackStoreModel = types.model({
   tracks: types.maybe(types.array(Track))
-}); 
+
+})
+ .views((self) => {
+   const rootStore = getRoot(self); 
+   const queueStore = rootStore.queueStore; 
+   return {
+     
+   }
+ }); 
 
 const TrackStore = types.compose(TrackStoreModel, createFetchData('tracks'));
 

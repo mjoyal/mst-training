@@ -1,11 +1,17 @@
 import React from "react";
 import { View, Image, StyleSheet, TouchableOpacity } from "react-native";
 
-import DefaultText from './DefaultText';
+import DefaultText from './Defaults/DefaultText';
 
-const QueueCard = ({name, owner, image}) => {
+const QueueCard = ({name, owner, image, navigation, id}) => {
   return (
-    <TouchableOpacity>
+    <TouchableOpacity
+      onPress={() => {
+        navigation.navigate('Queue', {
+          queueId: id
+        })
+      }}
+    >
       <View style={styles.container}>
         <View>
           <Image style={styles.image} source={{uri: image}}/>

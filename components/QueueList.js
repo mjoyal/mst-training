@@ -5,16 +5,20 @@ import {observer, inject} from 'mobx-react';
 import QueueCard from './QueueCard'; 
 
 const QueueList = inject('queueStore')(
-    observer(({queueStore}) => {
+    observer(({queueStore, navigation, route}) => {
+      
       if (queueStore.isLoading) {
         return null;
       }
       const renderMusicCard = (itemData) => {
+
         return (
             <QueueCard
+                id={itemData.item.id}
                 name={itemData.item.name}
                 owner={itemData.item.creatorId.name}
                 image="https://media.wonderlandmagazine.com/uploads/2020/07/0155_BEATSXASHNIKKO_BLUE_V3_C1.jpg"
+                navigation={navigation}
             />
         ); 
       }

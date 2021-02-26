@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Image, StyleSheet } from "react-native";
 
-import DefaultText from './DefaultText';
+import DefaultText from './Defaults/DefaultText';
 
 const MusicCard = ({name, owner, image}) => {
   return (
