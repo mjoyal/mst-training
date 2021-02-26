@@ -16,7 +16,8 @@ const [textValue, setTextValue] = useState(placeholder)
 const styles = StyleSheet.create({
     input: {
         borderBottomWidth: 2, 
-        borderBottomColor: 'black'
+        borderBottomColor: 'black', 
+        width: 200
     }
 }); 
 

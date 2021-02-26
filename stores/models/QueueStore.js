@@ -13,7 +13,7 @@ const Queue = types.model({
 }); 
 
 const QueueStoreModel = types.model({
-  queues: types.maybe(types.array(Queue))
+  queues: types.maybe(types.array(Queue)), 
 })
   .views((self) => {
     const rootStore = getRoot(self); 

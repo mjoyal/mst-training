@@ -11,13 +11,13 @@ const QueueList = inject('queueStore')(
         return null;
       }
       const renderMusicCard = (itemData) => {
-
+        console.log(itemData.item)
         return (
             <QueueCard
                 id={itemData.item.id}
                 name={itemData.item.name}
                 owner={itemData.item.creatorId.name}
-                image="https://media.wonderlandmagazine.com/uploads/2020/07/0155_BEATSXASHNIKKO_BLUE_V3_C1.jpg"
+                // image={itemData.item.tracks[0].albumImage}
                 navigation={navigation}
             />
         ); 
