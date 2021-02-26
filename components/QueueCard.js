@@ -1,19 +1,22 @@
 import React from "react";
-import { View, Image, StyleSheet } from "react-native";
+import { View, Image, StyleSheet, TouchableOpacity } from "react-native";
 
 import DefaultText from './DefaultText';
 
 const QueueCard = ({name, owner, image}) => {
   return (
-    <View style={styles.container}>
-      <View>
-        <Image style={styles.image} source={{uri: image}}/>
+    <TouchableOpacity>
+      <View style={styles.container}>
+        <View>
+          <Image style={styles.image} source={{uri: image}}/>
+        </View>
+        <View style={styles.textContainer}>
+          <DefaultText type="h3">{name}</DefaultText>
+          <DefaultText>Started by {owner}</DefaultText>
+        </View>
       </View>
-      <View>
-        <DefaultText type="h3">{name}</DefaultText>
-        <DefaultText>Started by {owner}</DefaultText>
-      </View>
-    </View>
+    </TouchableOpacity>
+
   ); 
 }; 
 
@@ -27,8 +30,9 @@ const styles = StyleSheet.create({
     width: 70, 
     height: 70, 
     resizeMode: 'contain', 
+  }, 
+  textContainer: {
     paddingHorizontal: 20
-    
   }
 
 }); 

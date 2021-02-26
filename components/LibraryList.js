@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, StyleSheet, FlatList} from "react-native";
 import {observer, inject} from 'mobx-react';
 
-import QueueCard from './QueueCard'; 
+import MusicCard from './MusicCard'; 
 
 const LibraryList = inject('trackStore')(
     observer(({trackStore}) => {
@@ -11,7 +11,7 @@ const LibraryList = inject('trackStore')(
       }
 
       const renderMusicCard = (itemData) => (
-            <QueueCard
+            <MusicCard
                 name={itemData.item.name}
                 owner={itemData.item.artist}
                 image={itemData.item.albumImage}

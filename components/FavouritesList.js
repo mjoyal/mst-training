@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, StyleSheet, FlatList} from "react-native";
 import {observer, inject} from 'mobx-react';
 
-import QueueCard from './QueueCard'; 
+import MusicCard from './MusicCard'; 
 
 const FavouritesList = inject('userStore')(
     observer(({userStore}) => {
@@ -12,7 +12,7 @@ const FavouritesList = inject('userStore')(
       const renderMusicCard = (itemData) => {
         console.log(itemData.item.creatorId);
         return (
-            <QueueCard
+            <MusicCard
                 name={itemData.item.name}
                 owner={itemData.item.artist}
                 image={itemData.item.albumImage}

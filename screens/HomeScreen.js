@@ -7,7 +7,7 @@ import QueueList from '../components/QueueList';
 const HomeScreen = ({navigation}) => {
   return (
     <View style={styles.screen}>
-      <QueueList/>
+      <QueueList navigation={navigation}/>
       <Button
         title="go to login"
         onPress={() => {navigation.navigate('Login')}}

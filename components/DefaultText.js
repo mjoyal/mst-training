@@ -10,19 +10,23 @@ const DefaultText = ({type, ...props}) => {
 
 const styles = StyleSheet.create({
   default: {
-    fontSize: 16
+    fontSize: 14,
+    paddingVertical: 5
   }, 
   h1: {
-    fontSize: 26, 
-    fontWeight: '700'
+    fontSize: 24, 
+    fontWeight: '700', 
+    paddingVertical: 5
   }, 
   h2: {
-    fontSize: 22, 
-    fontWeight: '700'
+    fontSize: 20, 
+    fontWeight: '700', 
+    paddingVertical: 5
   }, 
   h3: {
-    fontSize: 18, 
-    fontWeight: '700'
+    fontSize: 16, 
+    fontWeight: '700', 
+    paddingVertical: 5
   }
 
 }); 

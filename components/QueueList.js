@@ -10,7 +10,6 @@ const QueueList = inject('queueStore')(
         return null;
       }
       const renderMusicCard = (itemData) => {
-        console.log(itemData.item.creatorId);
         return (
             <QueueCard
                 name={itemData.item.name}
