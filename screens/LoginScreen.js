@@ -1,12 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
+import { useEffect } from "react";
 import { View, Text, StyleSheet, Button} from "react-native";
+import DefaultInput from '../components/DefaultInput'; 
+
 
 const LoginScreen = ({navigation}) => {
+  const [isSubmitted, setIsSubmitted ] = useState(false); 
+
+  useEffect(() => {
+    console.log(isSubmitted); 
+  }, [isSubmitted]); 
+
+  const handleLogin = () => {
+    setIsSubmitted(true)
+  }; 
   return (
     <View style={styles.screen}>
-      <Text>
-        LOgin Screen!
-      </Text>
+      <DefaultInput placeholder="username"/>
+      <Button
+        title="login"
+        onPress={handleLogin}
+      />
     </View>
   )
 }; 

@@ -1,12 +1,12 @@
 import React from "react";
 import { View, Text, StyleSheet, Button} from "react-native";
 
+import LibraryList from '../components/LibraryList'; 
+
 const SongLibraryScreen = ({navigation}) => {
   return (
     <View style={styles.screen}>
-      <Text>
-        Library Screen!
-      </Text>
+      <LibraryList/>
     </View>
   )
 }; 

@@ -3,15 +3,15 @@ import { View, Image, StyleSheet } from "react-native";
 
 import DefaultText from './DefaultText';
 
-const MusicCard = (props) => {
+const QueueCard = ({name, owner}) => {
   return (
     <View style={styles.container}>
       <View>
         <Image style={styles.image} source={{uri: 'https://images.genius.com/ed85bb9ee687b7922e35dc43a21cff1f.1000x1000x1.jpg'}}/>
       </View>
       <View>
-        <DefaultText>Party</DefaultText>
-        <DefaultText>Started by MacKenzie</DefaultText>
+        <DefaultText type="h3">{name}</DefaultText>
+        <DefaultText>Started by {owner}</DefaultText>
       </View>
     </View>
   ); 
@@ -31,4 +31,4 @@ const styles = StyleSheet.create({
 
 }); 
 
-export default MusicCard; 
+export default QueueCard; 

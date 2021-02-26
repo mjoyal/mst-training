@@ -1,4 +1,4 @@
-import {types} from 'mobx-state-tree';
+import {types, getRoot} from 'mobx-state-tree';
 
 import {Track} from './TrackStore';
 import {User} from './UserStore'; 
@@ -14,7 +14,15 @@ const Queue = types.model({
 
 const QueueStoreModel = types.model({
   queues: types.maybe(types.array(Queue))
-});
+})
+  .views((self) => {
+    const rootStore = getRoot(self); 
+    const userStore = rootStore.userStore;
+
+    return {
+       
+    }
+  })
 
 const QueueStore = types.compose(QueueStoreModel, createFetchData('queues'));
 
