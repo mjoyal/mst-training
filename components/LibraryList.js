@@ -14,17 +14,25 @@ const LibraryList = inject('trackStore')(
             <QueueCard
                 name={itemData.item.name}
                 owner={itemData.item.artist}
+                image={itemData.item.albumImage}
             />
         ); 
       
 
       return (
-        <View>
+        <View style={styles.screen}>
           <FlatList data={trackStore.tracks} renderItem={renderMusicCard} />
         </View>
       );
     }),
   );
 
+  const styles = StyleSheet.create({
+    screen: {
+      flex: 1, 
+      justifyContent: 'center', 
+      alignItems: 'center'
+    }, 
+  }); 
 
 export default LibraryList; 

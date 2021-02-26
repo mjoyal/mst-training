@@ -1,12 +1,13 @@
 import React from "react";
 import { View, Text, StyleSheet, Button} from "react-native";
 
+import FavouritesList from '../components/FavouritesList'; 
+
+
 const FavouritesScreen = ({navigation}) => {
   return (
     <View style={styles.screen}>
-      <Text>
-        Favourites Screen!
-      </Text>
+      <FavouritesList />
     </View>
   )
 }; 

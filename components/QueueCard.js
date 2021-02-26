@@ -3,11 +3,11 @@ import { View, Image, StyleSheet } from "react-native";
 
 import DefaultText from './DefaultText';
 
-const QueueCard = ({name, owner}) => {
+const QueueCard = ({name, owner, image}) => {
   return (
     <View style={styles.container}>
       <View>
-        <Image style={styles.image} source={{uri: 'https://images.genius.com/ed85bb9ee687b7922e35dc43a21cff1f.1000x1000x1.jpg'}}/>
+        <Image style={styles.image} source={{uri: image}}/>
       </View>
       <View>
         <DefaultText type="h3">{name}</DefaultText>
@@ -20,13 +20,15 @@ const QueueCard = ({name, owner}) => {
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row', 
-    justifyContent: 'space-between', 
-    alignItems: 'center'
+    alignItems: 'center', 
+    padding: 20
   },
   image: {
-    width: 100, 
-    height: 100, 
-    resizeMode: 'contain'
+    width: 70, 
+    height: 70, 
+    resizeMode: 'contain', 
+    paddingHorizontal: 20
+    
   }
 
 }); 

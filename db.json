@@ -69,61 +69,61 @@
     {
       "id": "1",
       "name": "Iron Mike",
-      "albumImage": "",
+      "albumImage": "https://media.pitchfork.com/photos/5beeeb6cc043d848dd4c82c3/1:1/w_320/leikeli47_acrylic.jpg",
       "artist": "Leikeli47"
     },
     {
       "id": "2",
       "name": "Girl Blunt",
-      "albumImage": "",
+      "albumImage": "https://images.genius.com/ed85bb9ee687b7922e35dc43a21cff1f.1000x1000x1.jpg",
       "artist": "Leikeli47"
     },
     {
       "id": "3",
       "name": "Issa Bounce",
-      "albumImage": "",
+      "albumImage": "https://i1.sndcdn.com/artworks-AtkqIb6CYqz3qPly-Rrq0Mg-t500x500.jpg",
       "artist": "UpsideDown"
     },
     {
       "id": "4",
       "name": "Missing You",
-      "albumImage": "",
+      "albumImage": "https://img.discogs.com/bNVdzBGbEgKVyCQrAR0W67at5F8=/fit-in/500x500/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-10597952-1500662851-9412.jpeg.jpg",
       "artist": "Boston Bun"
     },
     {
       "id": "5",
       "name": "Daisy",
-      "albumImage": "",
+      "albumImage": "https://media.wonderlandmagazine.com/uploads/2020/07/0155_BEATSXASHNIKKO_BLUE_V3_C1.jpg",
       "artist": "Ashnikko"
     },
     {
       "id": "6",
       "name": "Saggy Denim",
-      "albumImage": "",
+      "albumImage": "https://images.genius.com/9b1d5cd9a2eb7db18b99e44162d02a86.512x512x1.jpg",
       "artist": "Princess Nokia"
     },
     {
       "id": "7",
       "name": "OHFR",
-      "albumImage": "",
+      "albumImage": "https://images.genius.com/5dd7766f60e79bf0593125b440d717c8.999x999x1.png",
       "artist": "Rico Nasty"
     },
     {
       "id": "8",
       "name": "Tap In",
-      "albumImage": "",
+      "albumImage": "https://upload.wikimedia.org/wikipedia/en/thumb/0/07/Saweetie_-_Tap_In.png/220px-Saweetie_-_Tap_In.png",
       "artist": "Saweetie"
     },
     {
       "id": "9",
       "name": "CHIEF O'KIEF",
-      "albumImage": "",
+      "albumImage": "https://images.genius.com/e98a89efbc010df9496a4438aa38e7e2.1000x1000x1.jpg",
       "artist": "Sophiya"
     },
     {
       "id": "10",
       "name": "I Like Him",
-      "albumImage": "",
+      "albumImage": "https://images.genius.com/d5afc49c223c351d60209f10a66027ca.1000x1000x1.jpg",
       "artist": "Princess Nokia"
     }
   ],

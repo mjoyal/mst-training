@@ -15,6 +15,7 @@ const QueueList = inject('queueStore')(
             <QueueCard
                 name={itemData.item.name}
                 owner={itemData.item.creatorId.name}
+                image={itemData.item.albumImage}
             />
         ); 
       }
