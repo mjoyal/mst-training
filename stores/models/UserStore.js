@@ -11,8 +11,26 @@ export const User = types.model({
 });
 
 const UserStoreModel = types.model({
-  users: types.maybe(types.array(User)) 
-}); 
+  users: types.maybe(types.array(User)), 
+  loggedInUser:  types.maybeNull(types.reference(User)),
+})
+  .actions((self) => {
+
+    return {
+      setLoggedInUser(username) {
+       const user = self.users.find((user) => username.toLowerCase() === user.name); 
+       
+       if(user) {
+        console.log('logged in:',  user); 
+        self.loggedInUser = user;
+       } 
+       return null; 
+      }, 
+      logoutUser() {
+        self.loggedInUser = null; 
+      }
+    }
+  }); 
 
 const UserStore = types.compose(UserStoreModel, createFetchData('users'));
 

@@ -2,13 +2,13 @@ import React, {useState} from "react";
 import { StyleSheet, TextInput} from "react-native";
 
 
-const DefaultInput = ({placeholder, ...props}) => {
+const DefaultInput = ({placeholder, onChange, ...props}) => {
 const [textValue, setTextValue] = useState(placeholder)
   return (
     <TextInput 
         style={styles.input}
         value={textValue}
-        onChangeText={text => setTextValue(text)}
+        onChangeText={onChange}
     />
   );
 }; 

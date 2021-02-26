@@ -2,7 +2,7 @@
   "users": [
     {
       "id": "1",
-      "name": "mackenzie joyal",
+      "name": "mac",
       "favourites": [
         1,
         6,
@@ -12,7 +12,7 @@
     },
     {
       "id": "2",
-      "name": "kayleigh udy",
+      "name": "kayleigh",
       "favourites": [
         4,
         5,
@@ -21,12 +21,12 @@
     },
     {
       "id": "3",
-      "name": "rae hansen",
+      "name": "rae",
       "favourites": []
     },
     {
       "id": "4",
-      "name": "mia langford",
+      "name": "mia",
       "favourites": [
         3,
         10,
@@ -35,7 +35,7 @@
     },
     {
       "id": "5",
-      "name": "kara pearson",
+      "name": "kara",
       "favourites": [
         9,
         8,
@@ -44,7 +44,7 @@
     },
     {
       "id": "6",
-      "name": "catherine bax",
+      "name": "cath",
       "favourites": [
         1,
         2,
@@ -56,12 +56,12 @@
     },
     {
       "id": "7",
-      "name": "edward white",
+      "name": "ed",
       "favourites": []
     },
     {
       "id": "8",
-      "name": "josie greenhill",
+      "name": "josie",
       "favourites": []
     }
   ],
